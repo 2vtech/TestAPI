@@ -19,3 +19,9 @@ const apiCheck = async ()=>
 </script>
 
 <h1>API Test</h1>
+
+<style>
+  h1 {
+    color:green;
+  }
+</style>
