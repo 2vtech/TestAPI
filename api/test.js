@@ -1,5 +1,4 @@
-"use strict"
-
+// const dotest = async (req, res)=> // Commonjs style
 export default async(req, res)=>
 {
   console.log(`Test request: ${req.method}`);
@@ -11,10 +10,11 @@ export default async(req, res)=>
   console.log(`ReqBody:  ${JSON.stringify(req.body)}`);
   console.log(`Cookie:   ${JSON.stringify(req.cookies)}`);
 
-  if (req.method === 'GET') // user first accessing site
+  if (req.method === 'GET')
   {
     console.log('GET received!');
     return res.status(200).send('get');
   }
   else return res.status(200).send('error');
 }
+// module.exports.dotest = dotest; // Commonjs style
