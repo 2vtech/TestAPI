@@ -2,8 +2,6 @@
   "name": "testapi",
   "version": "1.0.0",
   "private": true,
-  "main": "server.js",
-  "type": "module",
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",

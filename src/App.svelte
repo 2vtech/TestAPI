@@ -39,7 +39,7 @@
 
 </script>
 
-<h1>API Test</h1>
+<h1>API Test App</h1>
 Response Time: {rsptime} msecs
 
 <style>
