@@ -1,5 +1,4 @@
-// const dotest = async (req, res)=> // Commonjs style
-export default async(req, res)=>
+const dotest = async (req, res)=>
 {
   console.log(`Test request: ${req.method}`);
 
@@ -17,4 +16,6 @@ export default async(req, res)=>
   }
   else return res.status(200).send('error');
 }
+
 // module.exports.dotest = dotest; // Commonjs style
+export default dotest;
