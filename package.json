@@ -6,7 +6,7 @@
     "build": "rollup -c",
     "dev": "rollup -c -w",
     "start": "sirv public --no-clear",
-    "buildgo": "rollup -c && node server"
+    "buildgo": "rollup -c && node server.mjs"
   },
   "devDependencies": {
   },
