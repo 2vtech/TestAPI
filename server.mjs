@@ -32,7 +32,7 @@ app.get('/build/*', async (req, res)=>
 });
 
 // const mtest = require('./api/test.js');
-import dotest from './api/test.js';
+import dotest from './api/test.mjs';
 
 app.get('/api/test', async (req, res)=>
 {
