@@ -15,6 +15,8 @@
 
   apiAddr += '/api/test';
 
+  let rsptime = '...';
+
   CheckAPI();
   async function CheckAPI()
   {
@@ -31,12 +33,14 @@
     const resp = await fetch(apiAddr, options);
 
     const msecsEnd = new Date().getTime();
-    console.log(`Response: ${msecsEnd - msecsStart} msecs`, resp);
+    rsptime = msecsEnd - msecsStart;
+    console.log(`Response: ${rsptime} msecs`, resp);
   }
 
 </script>
 
 <h1>API Test</h1>
+Response Time: {rsptime} msecs
 
 <style>
   h1 {
