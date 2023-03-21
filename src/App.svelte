@@ -6,10 +6,8 @@
   let apiAddr;
   if (window.location.hostname === 'localhost')
   {
-    // apiAddr = 'http://localhost:3000';
-    apiAddr = 'http://localhost:8080';
-
-    // console.log(`Functions hosted: ${apiAddr}`);
+    apiAddr = 'http://localhost:3000';
+    console.log(`Functions hosted: ${apiAddr}`);
   }
   else apiAddr = horigin;
 

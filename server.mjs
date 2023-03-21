@@ -48,7 +48,8 @@ app.all('*', (req, res)=>
   res.end();
 });
 
-const PORT_ADDR = process.env.PORT;
-// const PORT_ADDR = 8080;
+let PORT_ADDR = process.env.PORT;
+if (PORT_ADDR === undefined)
+    PORT_ADDR = 3000; // for localhost
 
-app.listen(PORT_ADDR, ()=> { console.log(`Server running...`) });
+app.listen(PORT_ADDR, ()=> { console.log(`Server running on port: ${PORT_ADDR}...`) });
