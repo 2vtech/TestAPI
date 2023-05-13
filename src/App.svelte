@@ -25,7 +25,7 @@
       redirect: 'follow',
       headers: { 'Content-Type': 'application/json' }
     };
-		console.log('Calling API test...');
+    console.log('Calling API test...');
 
     const msecsStart = new Date().getTime();
     const resp = await fetch(apiAddr, options);
